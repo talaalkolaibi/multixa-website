@@ -7,6 +7,7 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,155 +15,364 @@
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <header>
     <div class="container">
-      <div class="logo">
-    <img src="images/logo.png" alt="Multixa Logo">
-</div>
-    <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Request Service</a>
-    <a href="#contact-info">Contact</a>
-    </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Multixa Logo">
+        </div>
+
+        <button class="menu-btn" id="menu-btn">☰</button>
+
+
+        <nav id="nav-menu">
+            <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+            <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+            <a href="#pricing" data-en="Pricing" data-ar="الأسعار">Pricing</a>
+            <a href="#contact" data-en="Request Service" data-ar="طلب خدمة">Request Service</a>
+            <a href="#contact-info" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+            <button id="language-toggle" class="lang-btn">عربي</button>
+        </nav>
+    </div>
 </header>
 
 <!-- ===== HERO SECTION ===== -->
 <section id="home" class="hero">
     <div class="hero-content">
-        <h2>Reliable Maintenance & Operation Services</h2>
-        <p>Fast • Professional • Trusted Solutions in Jeddah</p>
-        <a href="#contact" class="btn">Request a Service</a>
+      <h2 data-en="Reliable Maintenance & Operation Services" data-ar="خدمات صيانة وتشغيل موثوقة">
+    Reliable Maintenance & Operation Services
+</h2>
+<p data-en="Fast • Professional • Trusted Solutions in Jeddah" data-ar="حلول سريعة • احترافية • موثوقة في جدة">
+    Fast • Professional • Trusted Solutions in Jeddah
+</p>
+<a href="#contact" class="btn" data-en="Request a Service" data-ar="اطلب خدمة">
+    Request a Service
+</a>
     </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
+<<!-- ===== SERVICES ===== -->
 <section id="services" class="section">
-    <h2>Our Services</h2>
+    <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+
     <div class="services-grid">
-   <div class="card">
-    <h3>Electrical</h3>
-    <p>Installations, upgrades, and electrical fault troubleshooting.</p>
-</div>
 
-<div class="card">
-    <h3>Plumbing</h3>
-    <p>Leak detection, repairs, and plumbing system installations.</p>
-</div>
+        <div class="card">
+            <h3 data-en="Electrical" data-ar="الكهرباء">Electrical</h3>
+            <p data-en="Electrical repairs, replacing switches, replacing bulbs, installations, upgrades, and fault troubleshooting."
+               data-ar="إصلاحات كهربائية، استبدال المفاتيح، استبدال المصابيح، التركيبات، التحديثات، وتشخيص الأعطال.">
+               Electrical repairs, replacing switches, replacing bulbs, installations, upgrades, and fault troubleshooting.
+            </p>
+        </div>
 
-<div class="card">
-    <h3>Air Conditioning</h3>
-    <p>AC installation, maintenance, and performance optimization.</p>
-</div>
+        <div class="card">
+            <h3 data-en="Plumbing" data-ar="السباكة">Plumbing</h3>
+            <p data-en="Plumbing repairs, changing faucets, changing hoses, leak detection, repairs, and plumbing installations."
+               data-ar="إصلاحات السباكة، تغيير الحنفيات، تغيير الخراطيم، كشف التسريبات، الإصلاحات، وتركيبات السباكة.">
+               Plumbing repairs, changing faucets, changing hoses, leak detection, repairs, and plumbing installations.
+            </p>
+        </div>
 
-<div class="card">
-    <h3>General Maintenance</h3>
-    <p>Day-to-day maintenance support to keep properties running smoothly.</p>
-</div>
+        <div class="card">
+            <h3 data-en="Air Conditioning" data-ar="التكييف">Air Conditioning</h3>
+            <p data-en="AC installation, maintenance, and performance optimization."
+               data-ar="تركيب المكيفات، الصيانة، وتحسين الأداء.">
+               AC installation, maintenance, and performance optimization.
+            </p>
+        </div>
 
-<div class="card">
-    <h3>Fire & Safety</h3>
-    <p>Maintenance support for fire and safety systems.</p>
-</div>
+        <div class="card">
+            <h3 data-en="Inspection" data-ar="الفحص">Inspection</h3>
+            <p data-en="Inspection visits to identify maintenance issues before service work begins."
+               data-ar="زيارات فحص لتحديد مشاكل الصيانة قبل بدء تنفيذ الخدمة.">
+               Inspection visits to identify maintenance issues before service work begins.
+            </p>
+        </div>
 
-<div class="card">
-    <h3>Flooring & Painting</h3>
-    <p>Professional flooring, tiling, and painting services with quality finishing.</p>
-</div>
+        <div class="card">
+            <h3 data-en="Emergency Services" data-ar="خدمات الطوارئ">Emergency Services</h3>
+            <p data-en="Urgent maintenance services, including requests after 9 PM."
+               data-ar="خدمات صيانة عاجلة، وتشمل الطلبات بعد الساعة 9 مساءً.">
+               Urgent maintenance services, including requests after 9 PM.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3 data-en="General Maintenance" data-ar="الصيانة العامة">General Maintenance</h3>
+            <p data-en="Day-to-day maintenance support to keep properties running smoothly."
+               data-ar="دعم الصيانة اليومية للحفاظ على تشغيل المنشآت بكفاءة.">
+               Day-to-day maintenance support to keep properties running smoothly.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3 data-en="Fire & Safety" data-ar="السلامة ومكافحة الحريق">Fire & Safety</h3>
+            <p data-en="Maintenance support for fire and safety systems."
+               data-ar="دعم وصيانة أنظمة السلامة ومكافحة الحريق.">
+               Maintenance support for fire and safety systems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3 data-en="Flooring & Painting" data-ar="الأرضيات والدهان">Flooring & Painting</h3>
+            <p data-en="Professional flooring, tiling, and painting services with quality finishing."
+               data-ar="خدمات احترافية للأرضيات والبلاط والدهان مع تشطيب عالي الجودة.">
+               Professional flooring, tiling, and painting services with quality finishing.
+            </p>
+        </div>
+
     </div>
 </section>
+
 
 <!-- ===== PRICING ===== -->
 <section id="pricing" class="section dark">
-    <h2>Service Pricing</h2>
+    <h2 data-en="Service Pricing" data-ar="أسعار الخدمات">Service Pricing</h2>
+
     <div class="pricing-grid">
+
         <div class="price-card">
-            <h3>Inspection</h3>
-            <p>40 SAR / hour</p>
+            <h3 data-en="Inspection" data-ar="الفحص">Inspection</h3>
+            <p data-en="40 SAR" data-ar="40 ريال">40 SAR</p>
+            <small data-en="Visit = 1 hour" data-ar="مدة الزيارة = ساعة واحدة">Visit = 1 hour</small>
         </div>
+
         <div class="price-card">
-            <h3>Electrical / Plumbing</h3>
-            <p>80 SAR / hour</p>
+            <h3 data-en="Electrical" data-ar="الكهرباء">Electrical</h3>
+            <p data-en="80 SAR" data-ar="80 ريال">80 SAR</p>
+            <small data-en="Visit = 1 hour" data-ar="مدة الزيارة = ساعة واحدة">Visit = 1 hour</small>
         </div>
+
         <div class="price-card">
-            <h3>Emergency</h3>
-            <p>120 SAR / hour</p>
+            <h3 data-en="Plumbing" data-ar="السباكة">Plumbing</h3>
+            <p data-en="80 SAR" data-ar="80 ريال">80 SAR</p>
+            <small data-en="Visit = 1 hour" data-ar="مدة الزيارة = ساعة واحدة">Visit = 1 hour</small>
         </div>
+
+        <div class="price-card">
+            <h3 data-en="Emergency" data-ar="الطوارئ">Emergency</h3>
+            <p data-en="120 SAR" data-ar="120 ريال">120 SAR</p>
+            <small data-en="Visit = 1 hour" data-ar="مدة الزيارة = ساعة واحدة">Visit = 1 hour</small>
+        </div>
+
+        <div class="price-card">
+            <h3 data-en="Quick Plumbing" data-ar="سباكة سريعة">Quick Plumbing</h3>
+            <p data-en="50 SAR" data-ar="50 ريال">50 SAR</p>
+            <small data-en="Visit = 30 minutes" data-ar="مدة الزيارة = 30 دقيقة">Visit = 30 minutes</small>
+        </div>
+
+        <div class="price-card">
+            <h3 data-en="Quick Electrical" data-ar="كهرباء سريعة">Quick Electrical</h3>
+            <p data-en="50 SAR" data-ar="50 ريال">50 SAR</p>
+            <small data-en="Visit = 30 minutes" data-ar="مدة الزيارة = 30 دقيقة">Visit = 30 minutes</small>
+        </div>
+
     </div>
 </section>
 
+
+<!-- ===== WHY CHOOSE US ===== -->
 <section class="section">
-    <h2>Why Choose Multixa Group?</h2>
+    <h2 data-en="Why Choose Multixa Group?" data-ar="لماذا تختار مجموعة ملتيكسا؟">
+        Why Choose Multixa Group?
+    </h2>
 
     <div class="services-grid">
+
         <div class="card">
-            <h3>Fast Response</h3>
-            <p>Quick service scheduling and reliable response for maintenance requests.</p>
+            <h3 data-en="Fast Response" data-ar="استجابة سريعة">Fast Response</h3>
+            <p data-en="Quick service scheduling and reliable response for maintenance requests."
+               data-ar="جدولة سريعة للخدمات واستجابة موثوقة لطلبات الصيانة.">
+               Quick service scheduling and reliable response for maintenance requests.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Skilled Technical Teams</h3>
-            <p>Qualified technicians delivering professional maintenance and operation services.</p>
+            <h3 data-en="Skilled Technical Teams" data-ar="فرق فنية محترفة">
+                Skilled Technical Teams
+            </h3>
+            <p data-en="Qualified technicians delivering professional maintenance and operation services."
+               data-ar="فنيون مؤهلون يقدمون خدمات صيانة وتشغيل باحترافية عالية.">
+               Qualified technicians delivering professional maintenance and operation services.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Quality-Focused Execution</h3>
-            <p>High-quality work with attention to safety, reliability, and customer satisfaction.</p>
+            <h3 data-en="Quality-Focused Execution" data-ar="تنفيذ بجودة عالية">
+                Quality-Focused Execution
+            </h3>
+            <p data-en="High-quality work with attention to safety, reliability, and customer satisfaction."
+               data-ar="أعمال عالية الجودة مع التركيز على السلامة والموثوقية ورضا العملاء.">
+               High-quality work with attention to safety, reliability, and customer satisfaction.
+            </p>
         </div>
+
     </div>
 </section>
 
 <!-- ===== CONTACT / FORM ===== -->
 <section id="contact" class="section">
-    <h2>Request a Servicel</h2>
+    <h2 data-en="Request a Service" data-ar="طلب خدمة">Request a Service</h2>
 
-     <form action="https://formspree.io/f/xpqbzozr" method="POST" class="form">
+    <form action="https://formspree.io/f/xdabknqk" method="POST" class="form">
         <input type="hidden" name="_next" value="https://thankyou.page">
         
-        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="name"
+            placeholder="Full Name"
+            data-placeholder-en="Full Name"
+            data-placeholder-ar="الاسم الكامل"
+            required>
         
-        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="email" name="email"
+            placeholder="Email Address"
+            data-placeholder-en="Email Address"
+            data-placeholder-ar="البريد الإلكتروني"
+            required>
         
-        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="phone"
+            placeholder="Phone Number"
+            data-placeholder-en="Phone Number"
+            data-placeholder-ar="رقم الهاتف"
+            required>
 
-        <input type="text" name="service" placeholder="Service Needed">
+        <input type="text" name="service"
+            placeholder="Service Needed"
+            data-placeholder-en="Service Needed"
+            data-placeholder-ar="نوع الخدمة المطلوبة">
 
-        <textarea name="message" placeholder="Describe your request"></textarea>
+        <textarea name="message"
+            placeholder="Describe your request"
+            data-placeholder-en="Describe your request"
+            data-placeholder-ar="اكتب تفاصيل طلبك"></textarea>
 
-        <input type="number" name="budget" placeholder="Your Budget (SAR)">
+        <input type="number" name="budget"
+            placeholder="Your Budget (SAR)"
+            data-placeholder-en="Your Budget (SAR)"
+            data-placeholder-ar="ميزانيتك (ريال سعودي)">
 
-        <button type="submit">Submit Request</button>
+       <div class="terms-action">
+    <button type="button" id="open-terms" class="terms-btn"
+        data-en="View Terms & Conditions"
+        data-ar="عرض  الشروط  و الأحكام">
+        View Terms & Conditions
+    </button>
+
+    <label class="agree-label">
+        <input type="checkbox" id="terms-checkbox" required>
+        <span data-en="I agree to the Terms & Conditions"
+              data-ar="أوافق على الشروط والأحكام">
+            I agree to Terms & Conditions
+        </span>
+    </label>
+</div>
+
+<button type="submit"
+    data-en="Submit Request"
+    data-ar="إرسال الطلب">
+    Submit Request
+</button>
     </form>
 </section>
 
-<!-- ===== CONTACT INFO ===== -->
-<section id="contact-info" class="section dark">
-    <h2>Contact Us</h2>
+<div id="terms-modal" class="modal">
+    <div class="modal-content">
+        <button class="close-modal" id="close-terms">×</button>
 
-   <div class="contact-info">
-    <h3>Get in Touch</h3>
+        <h3 data-en="Terms & Conditions" data-ar="الشروط والأحكام">
+            Terms & Conditions
+        </h3>
 
-    <p>Email: multixaproperty@gmail.com</p>
-    <p>Location: Jeddah, Saudi Arabia</p>
-    <p>Phone: 966 599420777</p>
+        <ul>
 
-    <a class="whatsapp-btn" href="https://wa.me/966560656029" target="_blank">
-        <img src="images/whatsapp.jpg" alt="WhatsApp">
-        Chat on WhatsApp
-    </a>
+            <li data-en="Service requests are scheduled and completed within a maximum of 4 hours, depending on availability."
+                data-ar="يتم جدولة طلبات الخدمة وتنفيذها خلال مدة أقصاها 4 ساعات، حسب التوفر.">
+                Service requests are scheduled and completed within a maximum of 4 hours, depending on availability.
+            </li>
+            <li data-en="A service warranty is provided for a period of 6 months."
+                data-ar="يتم تقديم ضمان على الخدمة لمدة 6 أشهر.">
+                A service warranty is provided for a period of 6 months.
+            </li>
+            <li data-en="Required spare parts are to be supplied by the client."
+                data-ar="يتم توفير قطع الغيار المطلوبة من قبل العميل.">
+                Required spare parts are to be supplied by the client.
+            </li>
+            <li data-en="If parts are provided by the company, an additional 15% service fee will apply."
+                data-ar="في حال تم توفير قطع الغيار من قبل الشركة، يتم إضافة رسوم خدمة بنسبة 15%.">
+                If parts are provided by the company, an additional 15% service fee will apply.
+            </li>
+            <li data-en="Payment is processed upon completion of the service."
+                data-ar="يتم الدفع بعد الانتهاء من تنفيذ الخدمة.">
+                Payment is processed upon completion of the service.
+            </li>
+            <li data-en="Additional services are arranged based on prior scheduling and agreement."
+                data-ar="يتم ترتيب الخدمات الإضافية بناءً على جدولة واتفاق مسبق.">
+                Additional services are arranged based on prior scheduling and agreement.
+            </li>
+              <li data-en="Inspection fee is deducted if service is completed."
+        data-ar="يتم خصم رسوم الفحص في حال تنفيذ الخدمة.">
+        Inspection fee is deducted if service is completed.
+    </li>
+
+    <li data-en="Any service after 9 PM will be charged as an emergency."
+        data-ar="أي خدمة بعد الساعة 9 مساءً تُحسب كخدمة طوارئ.">
+        Any service after 9 PM will be charged as an emergency.
+    </li>
+
+    <li data-en="Quick plumbing includes light repairs such as changing faucets and hoses."
+        data-ar="تشمل السباكة السريعة الإصلاحات البسيطة مثل تغيير الحنفيات والخراطيم.">
+        Quick plumbing includes light repairs such as changing faucets and hoses.
+    </li>
+
+    <li data-en="Quick electrical includes light repairs such as replacing switches and bulbs."
+        data-ar="تشمل الكهرباء السريعة الإصلاحات البسيطة مثل استبدال المفاتيح والمصابيح.">
+        Quick electrical includes light repairs such as replacing switches and bulbs.x
+        </ul>
+
+    </div>
 </div>
-</section>
 
+
+
+
+<section id="contact-info" class="section dark">
+    <h2 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
+
+    <div class="contact-info">
+        <p>
+            <span data-en="Email:" data-ar="البريد الإلكتروني:">Email:</span>
+            <a href="mailto:multixaproperty@gmail.com">multixaproperty@gmail.com</a>
+        </p>
+
+        <p>
+            <span data-en="Location:" data-ar="الموقع:">Location:</span>
+            <span data-en="Jeddah, Saudi Arabia" data-ar="جدة، المملكة العربية السعودية">
+                Jeddah, Saudi Arabia
+            </span>
+        </p>
+
+        <p>
+            <span data-en="Phone:" data-ar="رقم الهاتف:">Phone:</span>
+            <a href="tel:+966599420777">+966 59 942 0777</a> |
+            <a href="tel:+966560656029">+966 56 065 6029</a>
+        </p>
+    </div>
+</section>
 <!-- ===== FOOTER ===== -->
 <footer>
     <p>Multixa Group © 2026 | Jeddah, Saudi Arabia</p>
 </footer>
 
-<a class="floating-whatsapp" href="https://wa.me/966560656029" target="_blank">
-    <img src="images/whatsapp.png" alt="WhatsApp">
-</a>
+<div class="whatsapp-widget">
+    <button class="floating-whatsapp" id="floating-whatsapp-btn">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </button>
+
+   <div class="whatsapp-options" id="floating-whatsapp-options">
+    <a href="https://wa.me/966599420777" target="_blank">+966 59 942 0777</a>
+    <a href="https://wa.me/966560656029" target="_blank">+966 56 065 6029</a>
+</div>
+</div>
+<script src="script.js"></script>
+
 
 </body>
 </html>
